@@ -32,13 +32,12 @@ def main():
     if not greeting.called:
         greeting()
 
-    num = ""
-
     while num not in ["E", "e"]:
         bin = []
+        num = input("\nEnter your number: ")
 
         try:
-            num = int(input("\nEnter your number: "))
+            num = int(num)
 
         except ValueError:
             if num not in ["E", "e"]:
@@ -60,4 +59,5 @@ def main():
         print(*bin, sep='')
 
 if __name__ == "__main__":
+
     main()
