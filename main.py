@@ -40,7 +40,7 @@ def main():
             num = int(num)
 
         except ValueError:
-            if num not in ["E", "e"]:
+            if num in ["E", "e"]:
                 exit()
             else:
                 exit("ERROR: Input must be a number.")
@@ -61,3 +61,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
